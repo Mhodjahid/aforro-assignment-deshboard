@@ -11,12 +11,6 @@ function toPoints(data, w, h, sharedMax) {
         .join(' ')
 }
 
-function toArea(data, w, h, sharedMax) {
-    if (!data || data.length < 2) return ''
-    const max = sharedMax || Math.max(...data, 1)
-    const pts = data.map((v, i) => `${(i / (data.length - 1)) * w},${h - (v / max) * (h - 10)}`)
-    return `M ${pts.join(' L ')} L ${w},${h} L 0,${h} Z`
-}
 
 const lines = [
     { key: 'loyal', color: '#6c5ce7', label: 'Loyal Customers' },
