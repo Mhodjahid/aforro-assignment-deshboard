@@ -1,0 +1,64 @@
+.sales-map-wrap {
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #EBF5FB;
+}
+
+.map-inner {
+    position: relative;
+    width: 100%;
+    line-height: 0;
+}
+
+.map-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.map-pin {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.pin-ring3,
+.pin-ring2,
+.pin-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--c);
+    display: block;
+}
+
+.pin-ring3 {
+    width: 28px;
+    height: 28px;
+    opacity: 0.15;
+}
+
+.pin-ring2 {
+    width: 17px;
+    height: 17px;
+    opacity: 0.3;
+}
+
+.pin-core {
+    width: 9px;
+    height: 9px;
+    opacity: 1;
+}
+
+.map-pin:hover .pin-ring3 {
+    opacity: 0.25;
+    width: 34px;
+    height: 34px;
+    transition: all 0.2s;
+}

@@ -1,0 +1,102 @@
+.sales-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px 28px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sales-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.section-sub {
+    font-size: 12px;
+    color: #8a8fa8;
+    margin-top: 2px;
+}
+
+.export-btn {
+    background: #fff;
+    border: 1px solid #e8eaf0;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 12px;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.export-btn:hover {
+    background: #f4f5f8;
+}
+
+/* Grid of 4 colored cards */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    flex: 1;
+}
+
+.stat-card {
+    border-radius: 14px;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.stat-val {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.stat-lbl {
+    font-size: 13px;
+    color: #8a8fa8;
+    font-weight: 500;
+}
+
+.stat-chg {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.stat-chg.up {
+    color: #2ecc71;
+}
+
+.stat-chg.down {
+    color: #e74c3c;
+}
+
+@media (max-width: 600px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
